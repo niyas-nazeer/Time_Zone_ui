@@ -1,115 +1,137 @@
 import { useEffect, useState } from "react";
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import './Login.css';
 
 let data = {}
 const Login = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [error,setError] = useState('');
-    const [res,setResult]=useState([]);
-    const navigate = useNavigate(); 
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [res, setResult] = useState([]);
+  const navigate = useNavigate();
 
-    useEffect(() => {
-      const accessToken = localStorage.getItem('access');
-  
-      // Function to verify the token
-      const verifyToken = async () => {
-        if (!accessToken) {
-          navigate('/login');
-          return; // Exit if there's no token
+  useEffect(() => {
+    const accessToken = localStorage.getItem('access');
+
+    // Function to verify the token
+    const verifyToken = async () => {
+      if (!accessToken) {
+        navigate('/login');
+        return; // Exit if there's no token
+      }
+
+      try {
+        const data = { access: accessToken };
+        const response = await fetch('http://127.0.0.1:8000/api/user/verify', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + accessToken
+          },
+          body: JSON.stringify(data),
+        });
+
+        // Check if the response is OK
+        if (response.ok) {
+          navigate('/home');
         }
-  
-        try {
-          const data = { access: accessToken };
-          const response = await fetch('http://127.0.0.1:8000/api/user/verify', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization':'Bearer '+accessToken
-            },
-            body: JSON.stringify(data),
-          });
-  
-          // Check if the response is OK
-          if (response.ok) {
-            navigate('/home');
-          }
-          else{
-            localStorage.removeItem('refresh');
-            localStorage.removeItem('access');
-            localStorage.removeItem('userType');
-          }
-        } catch (err) {
-        
-          // console.error(err);
+        else {
+          localStorage.removeItem('refresh');
+          localStorage.removeItem('access');
+          localStorage.removeItem('userType');
         }
-      };
-  
-      verifyToken(); // Call the async function
-  
-    }, []); 
-    
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+      } catch (err) {
 
-        if(!username || !password){
-            setError("Please fill both fields!");
-            return;
-        };
+        // console.error(err);
+      }
+    };
 
-        data={
-            "username":username,
-            "password":password
-        }
+    verifyToken(); // Call the async function
 
-        setError('');
+  }, []);
 
-        try {
-            const response = await fetch('http://127.0.0.1:8000/api/user/login', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-                
-              },
-              body: JSON.stringify(data),
-            });
-      
-            // Check if the response is OK
-            if (!response.ok) {
-              alert("Incorrect Email or Password");
-              throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-      
-            const result = await response.json();
-            setResult(result);
-            localStorage.setItem('refresh', result.refresh);
-            localStorage.setItem('access', result.access);
-            localStorage.setItem('userType', result.type);
-            navigate('/Home')
-          } catch (err) {
-            setError(err);
-          } finally {
-            // setLoading(false);
-          }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!username || !password) {
+      setError("Please fill both fields!");
+      return;
+    };
+
+    data = {
+      "username": username,
+      "password": password
     }
+
+    setError('');
+
+    try {
+      const response = await fetch('http://127.0.0.1:8000/api/user/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+
+        },
+        body: JSON.stringify(data),
+      });
+
+      // Check if the response is OK
+      if (!response.ok) {
+        alert("Incorrect Email or Password");
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      setResult(result);
+      localStorage.setItem('refresh', result.refresh);
+      localStorage.setItem('access', result.access);
+      localStorage.setItem('userType', result.type);
+      navigate('/Home')
+    } catch (err) {
+      setError(err);
+    } finally {
+      // setLoading(false);
+    }
+  }
 
   return (
     <>
-        <div className='container'>
-            <h1>Sign in</h1>
-            <form>
-                <input type="text" name="username" onChange={(e) => setUsername(e.target.value)} value={username} placeholder="Username"/>
-                <input type="password" name="password" onChange={(e) => setPassword(e.target.value)} value={password}/>
-                <div>{error}</div>
-                <button onClick={handleSubmit}>Sign in</button>
+      <div className="login-container">
+        <h1 className="title">Time Zone</h1>
+          <div className="login-card">
+            <h1 className="login-h1">Login</h1>
+            <form onSubmit={handleSubmit}>
+              <div className="input-group">
+                <input
+                  type="text"
+                  name="username"
+                  onChange={(e) => setUsername(e.target.value)}
+                  value={username}
+                  placeholder="Username"
+                  className="input-field"
+                />
+              </div>
+              <div className="input-group">
+                <input
+                  type="password"
+                  name="password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
+                  placeholder="Password"
+                  className="input-field"
+                />
+              </div>
+              <div className="error-message">{error}</div>
+              <button type="submit" className="submit-button">Login</button>
             </form>
-            <p>Don't have an account <a href="">Sign Up</a></p>
-
-            <div>
-                <pre>{data.type}</pre>
+            <p className="signup-link">New to Time Zone? <a href="/signup">Create an account</a></p>
+            <div className="user-type">
+              <pre>{data.type}</pre>
             </div>
-        </div>
+          </div>
+      </div>
+
     </>
   )
 }
