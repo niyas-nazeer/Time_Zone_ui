@@ -7,7 +7,6 @@ const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error,setError] = useState('');
-    const [res,setResult]=useState([]);
     const navigate = useNavigate(); 
 
     useEffect(() => {
@@ -82,7 +81,6 @@ const Login = () => {
             }
       
             const result = await response.json();
-            setResult(result);
             localStorage.setItem('refresh', result.refresh);
             localStorage.setItem('access', result.access);
             localStorage.setItem('userType', result.type);
