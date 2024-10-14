@@ -7,7 +7,6 @@ const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error,setError] = useState('');
-    const [res,setResult]=useState([]);
     const navigate = useNavigate(); 
 
     useEffect(() => {
@@ -82,7 +81,6 @@ const Login = () => {
             }
       
             const result = await response.json();
-            setResult(result);
             localStorage.setItem('refresh', result.refresh);
             localStorage.setItem('access', result.access);
             localStorage.setItem('userType', result.type);
@@ -100,7 +98,7 @@ const Login = () => {
             <h1>Sign in</h1>
             <form>
                 <input type="text" name="username" onChange={(e) => setUsername(e.target.value)} value={username} placeholder="Username"/>
-                <input type="password" name="password" onChange={(e) => setPassword(e.target.value)} value={password}/>
+                <input type="password" name="password" onChange={(e) => setPassword(e.target.value)} value={password} placeholder="Password"/>
                 <div>{error}</div>
                 <button onClick={handleSubmit}>Sign in</button>
             </form>
