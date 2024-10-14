@@ -1,0 +1,100 @@
+/* Main Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(45deg, #6e7c7c, #a4b0b5); */
+}
+
+/* Title */
+.title{
+    font-size: 3.2rem;
+    margin-right: 24%;
+    color: #333;
+}
+
+/* Login Card */
+.login-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* login-h1 */
+.login-h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #00b3bd;
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #00696e;
+}
+
+/* Sign Up Link */
+.signup-link {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    color: #555;
+}
+
+.signup-link a {
+    color: #00696e;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* User Type Display */
+.user-type {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
