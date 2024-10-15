@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
 const Home = () => {
@@ -43,7 +43,10 @@ const Home = () => {
 
   }, []); 
   return (
-    <div>Home</div>
+    <>
+      <div>Home</div>
+      <Link to="/product">Go to product pages</Link>
+    </>
   )
 }
 
