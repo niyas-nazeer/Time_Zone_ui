@@ -1,0 +1,47 @@
+body{
+    background-color: azure;
+}
+
+.navbar{
+    background-color: antiquewhite;
+}
+
+nav{
+    color: black;
+}
+
+.nav-link:hover{
+    color: #0fced8;
+}
+
+form{
+    align-items: center;
+
+}
+
+.form-control{
+    border: none !important;
+}
+
+.input-group{
+    align-items: center;
+}
+
+#search-btn{
+    background-color: whitesmoke;
+    border: none;
+}
+
+#search-btn{
+    background-color: whitesmoke;
+}
+
+.nav-icon:hover{
+    font-size: 1.25rem;
+}
+
+#icondiv{
+    width: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
