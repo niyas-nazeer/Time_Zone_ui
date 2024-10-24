@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+}
+
+.brand-name{
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.left-nav-section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: start;
+    padding:0 2rem;
+    gap: 5rem;
+}
+
+.menu-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+
+
+.menu-links{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.account-links{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+a {
+    text-decoration: none;
+    color: #000;  /* Optional styling for links */
+    margin-bottom: 10px;  /* Add some spacing between links */
+}
+
+.menu-links , .account-links h5{
+    margin-bottom: 1rem;
+}
+
