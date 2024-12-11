@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    box-shadow: 0 0 6px #20212426;
+}
+
+.brand_name{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 240px;
+    position: fixed !important;
+    align-items: start;
+    padding:0 2rem;
+    gap: 2rem;
+    background-color: rgb(245, 245, 247) !important;
+    border-right: 1px solid #E5E7EB;
+    color: #4A5568 ;
+}
+
+.sidebar-menu *{
+    background-color: rgb(245, 245, 247) !important;
+}
+
+.menu_section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+
+.menu_links{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.account_links{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+a {
+    text-decoration: none !important;
+    color: #4A5568 !important;
+    margin-top: -2px;
+}
+
+
+.sidebar-menu .icon_box a.active {
+    font-weight: 500;
+    color: #007bff !important; /* Blue color for active links */
+}
+
+.sidebar-menu .icon_box a:hover {
+    color: #007bff !important; 
+}
+
+.menu_links h6 , .account_links h6{
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.icon_box{
+    display: flex;
+    height: 1rem;
+    gap: 8px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.profile_card{
+    display: flex;
+    align-items: center;
+    gap: 14px; /* Adjust the space between items as needed */
+}
+
+.img_box{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.img_box img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100px;
+    padding: auto;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.details .name{
+    color: black;
+    margin-left: -41px;
+}
+
+.details .email{
+    font-size: 14px;
+}
+
+.profile_card .icon{
+    display: flex;
+    align-items: center;
+    height: 65px ;
+}

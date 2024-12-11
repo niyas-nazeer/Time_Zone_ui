@@ -1,0 +1,70 @@
+/* PriceRangeFilter.css */
+
+/* .price-range-filter {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.price-range-filter{
+    border-bottom: 1px solid #E5E7EB ;
+
+}
+
+.filter-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #7d7d7d;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+
+.slider-container {
+    margin: 12px 0;
+    padding-left: 6px;
+    position: relative;
+}
+
+.slider-track {
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.slider-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.price-inputs-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.price-inputs-box input:focus{
+    outline: none;
+}
+
+.price-input {
+    width: 45%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.to-text {
+    font-size: 14px;
+    color: #7d7d7d;
+    margin: 0 8px;
+}

@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white !important;
+}
+
+:root{
+    --border-color:#E5E7EB;
+    --focus-border-color:#c8cace;
+}
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header{
+    display: flex;
+    gap: 10px;
+    margin-left: 2.6rem;
+}
+
+.row label{
+    font-size: 15px;
+    color: #4A5568;
+}
+
+.back-button{
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height:40px;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.back-button img{
+    margin-top: 0;
+}
+
+.text-box p {
+    margin-bottom: 3.2px !important;
+    margin-top: -3px;
+    font-size: 12.5px;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.second-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.detail-box{
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+}
+
+
+.input-box{
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+}
+
+.input-box input:focus, textarea:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: var(--focus-border-color) !important;
+}
+
+
+.btn-box{
+    margin-top: 1.2rem !important;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.discard-btn{
+    font-size: 0.9rem;
+    width: 5rem !important;
+    padding: 7px 15px;
+    border:none;
+    border: 1px solid var(--focus-border-color);
+    color: black;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.discard-btn:active{
+    background-color: var(--border-color) !important;
+}
+
+.add-product-btn{
+    font-size: 0.9rem;
+    width: 6.5rem !important;
+    padding: 7px;
+    border:none;
+    background-color: #007bff !important;
+    color: white;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.add-product-btn:active{
+    background-color: #0572e7 !important;
+}
