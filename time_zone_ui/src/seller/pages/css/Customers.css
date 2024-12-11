@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.add-customer-btn{
+    border: none;
+    background-color: #007bff !important;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 6px;
+    transition: background-color,transform 0.3s ease-in-out;
+}
+
+.customer-btn-box{
+    display: flex;
+    justify-content: end;
+}
+
+.sortby-filter-box{
+    display: flex;
+    justify-content: end;
+}
+
+.add-customer-btn:active{
+    background-color: #0572e7 !important;
+}
+
+.add-customer-btn:hover{
+    transform: translateY(-0.5px);
+}

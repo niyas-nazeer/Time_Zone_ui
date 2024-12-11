@@ -1,0 +1,35 @@
+/* Remove borders and background for the accordion */
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid #E5E7EB !important;
+}
+.accordion-button {
+    background-color: transparent;
+    border: none;
+    color: inherit; /* Maintain text color unless you want to customize */
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: inherit;
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-button:focus,
+.accordion-button:active {
+    border: none;
+    box-shadow: none;
+    outline: none; /* Ensures no focus outline */
+}
+
+.accordion-body{
+    margin-top: -20px;
+}
+
+/* Remove background color and border for the accordion content */
+.accordion-collapse {
+    border: none;
+    background-color: transparent;
+}

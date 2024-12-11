@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.product-details{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.product-name{
+    font-size: 1.1rem;
+    color: black !important;
+}
+
+.table {
+    overflow: auto !important;
+}
+
+.img-box img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 4px;
+}
+
+.name-category{
+    display: flex;
+    flex-direction: column;
+}
+
+.table_light{
+    background-color: blue !important;
+}
