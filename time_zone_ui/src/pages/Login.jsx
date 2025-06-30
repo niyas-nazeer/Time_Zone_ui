@@ -98,38 +98,38 @@ const Login = () => {
   return (
     <>
       <div className="login-container">
-      <h1 className="title">Time Zone</h1>
-        <div className="login-card">
-          <h1 className="login-h1">Login</h1>
-          <form onSubmit={handleSubmit}>
-            <div className="input-group">
-              <input
-                type="text"
-                name="username"
-                onChange={(e) => setUsername(e.target.value)}
-                value={username}
-                placeholder="Username"
-                className="input-field"
-              />
+        <h1 className="title">Time Zone</h1>
+          <div className="login-card">
+            <h1 className="login-h1">Login</h1>
+            <form onSubmit={handleSubmit}>
+              <div className="input-group">
+                <input
+                  type="text"
+                  name="username"
+                  onChange={(e) => setUsername(e.target.value)}
+                  value={username}
+                  placeholder="Username"
+                  className="input-field"
+                />
+              </div>
+              <div className="input-group">
+                <input
+                  type="password"
+                  name="password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
+                  placeholder="Password"
+                  className="input-field"
+                />
+              </div>
+              <div className="error-message">{error}</div>
+              <button type="submit" className="submit-button">Login</button>
+            </form>
+            <p className="signup-link">New to Time Zone? <a href="/signup">Create an account</a></p>
+            <div className="user-type">
+              <pre>{data.type}</pre>
             </div>
-            <div className="input-group">
-              <input
-                type="password"
-                name="password"
-                onChange={(e) => setPassword(e.target.value)}
-                value={password}
-                placeholder="Password"
-                className="input-field"
-              />
-            </div>
-            <div className="error-message">{error}</div>
-            <button type="submit" className="submit-button">Login</button>
-          </form>
-          <p className="signup-link">New to Time Zone? <a href="#">Create an account</a></p>
-          <div className="user-type">
-            <pre>{data.type}</pre>
           </div>
-        </div>
       </div>
 
     </>
