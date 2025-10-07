@@ -3,6 +3,7 @@ import { useNavigate,Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import HeroCarousel from '../components/HeroCarousel';
+import FeatureImage from '../components/FeatureImage';
 
 
 const Home = () => {
@@ -59,6 +60,12 @@ const Home = () => {
       <br></br>
       
       <HeroCarousel />
+
+      <br></br>
+
+      <FeatureImage />
+
+      <br></br>
 
       <Link to="/product">Go to product pages</Link>
     </>
