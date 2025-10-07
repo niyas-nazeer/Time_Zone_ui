@@ -2,6 +2,8 @@ import React from 'react'
 import { useNavigate,Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import NavBar from '../components/NavBar'
+import HeroCarousel from '../components/HeroCarousel';
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -43,14 +45,21 @@ const Home = () => {
     verifyToken(); // Call the async function
 
   }, []); 
+
+
+
+ 
+
+
+
   return (
     <>
       <NavBar/>
+
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div><h1>Home</h1></div>
+      
+      <HeroCarousel />
+
       <Link to="/product">Go to product pages</Link>
     </>
   )
