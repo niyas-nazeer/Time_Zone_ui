@@ -1,0 +1,20 @@
+.brand-h1{
+    text-align: center;
+    font-size: 200%;
+    color: rgb(80, 192, 192);
+}
+
+.brand-h2{
+    text-align: center;
+    font-size: 125%;
+    color: black;
+}
+
+.brand-container {
+  display: flex;               
+  justify-content: center;     
+  align-items: center;         
+  flex-wrap: wrap;             
+  gap: 20px;                   
+  margin-top: 3%;
+}
