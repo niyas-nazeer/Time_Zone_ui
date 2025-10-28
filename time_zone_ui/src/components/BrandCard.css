@@ -1,0 +1,22 @@
+.brand-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  /* width: 100%; */
+  /* gap: 20px; */
+  max-width: 150px;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 15px rgb(140, 250, 250);
+  background-color: white;
+  /* text-align: center; */
+  overflow: hidden;
+}
+
+
+.brand-card img {
+  width: 100%;
+}
+
