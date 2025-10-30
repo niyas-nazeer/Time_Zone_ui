@@ -1,0 +1,50 @@
+.brands-section {
+  padding: 40px 0;
+  
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.brands-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.brands-swiper {
+  width: 94%;
+  margin: 0 auto;
+  
+}
+
+.brand-slide {
+  width: 220px !important;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  
+}
+
+.brand-slide:hover {
+  transform: scale(1.05);
+}
+
+.brand-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: black;
+  transition: 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #555;
+  
+}

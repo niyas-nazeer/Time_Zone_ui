@@ -6,6 +6,7 @@ import NavBar from '../components/NavBar'
 import HeroCarousel from '../components/HeroCarousel';
 import FeatureImage from '../components/FeatureImage';
 import BrandCard from '../components/BrandCard';
+import BrandsCarousel from '../components/BrandsCarousel';
 
 
 const Home = () => {
@@ -93,6 +94,11 @@ const Home = () => {
         <BrandCard logo="/assets/brand-cards/timex.jpeg"link="/brands/timex" />
         <BrandCard logo="/assets/brand-cards/titan.jpg" link="/brands/titan" />
       </div>
+
+      <br></br>
+      <br></br>
+
+      <BrandsCarousel />
 
       <br></br>
       <br></br>
