@@ -7,6 +7,7 @@ import HeroCarousel from '../components/HeroCarousel';
 import FeatureImage from '../components/FeatureImage';
 import BrandCard from '../components/BrandCard';
 import BrandsCarousel from '../components/BrandsCarousel';
+import FeatureCarousel from '../components/FeatureCarousel';
 
 
 const Home = () => {
@@ -82,7 +83,7 @@ const Home = () => {
         <BrandCard logo="/assets/brand-cards/amazefit.jpeg" link="/brands/amazefit" />
         <BrandCard logo="/assets/brand-cards/casio.jpg" link="/brands/casio" />
         <BrandCard logo="/assets/brand-cards/citizen.jpg" link="/brands/citizen" />
-  
+
         <BrandCard logo="/assets/brand-cards/diesel.jpg" link="/brands/diesel" />  
         <BrandCard logo="/assets/brand-cards/fastrack.png" link="/brands/fastrack" />  
         <BrandCard logo="/assets/brand-cards/fossil.png" link="/brands/fossil" />
@@ -99,6 +100,11 @@ const Home = () => {
       <br></br>
 
       <BrandsCarousel />
+
+      <br></br>
+      <br></br>
+
+      <FeatureCarousel />
 
       <br></br>
       <br></br>
