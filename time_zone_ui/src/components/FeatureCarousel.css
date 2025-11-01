@@ -1,0 +1,110 @@
+.feature-carousel-section {
+  width: 100%;
+  padding: 90px 0;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.feature-carousel {
+  width : 95%;
+  margin: 0 auto;
+  
+}
+
+.feature-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+
+}
+
+.feature-img-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-img {
+  width: 100%;
+  max-width: 70%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.feature-content {
+  flex: 1;
+  max-width: 30%;
+  text-align: left;
+  margin-right: 50px;
+}
+
+.feature-label {
+  color: #00b2a9;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.feature-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.explore-btn {
+  background-color: #00b2a9;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #008f86;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #111;
+  transition: 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #00b2a9;
+}
+
+/* .swiper-button-prev {
+  margin-top: -30px !important;
+}
+
+.swiper-button-next {
+  margin-top: -30px !important;
+} */
+
+/* Responsive */
+@media (max-width: 900px) {
+  .feature-slide {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-content {
+    text-align: center;
+  }
+}
