@@ -8,6 +8,7 @@ import FeatureImage from '../components/FeatureImage';
 import BrandCard from '../components/BrandCard';
 import BrandsCarousel from '../components/BrandsCarousel';
 import FeatureCarousel from '../components/FeatureCarousel';
+import Footer from '../components/Footer';
 
 
 const Home = () => {
@@ -110,6 +111,7 @@ const Home = () => {
       <br></br>
 
       <Link to="/product">Go to product pages</Link>
+      <Footer />
 
     </>
   )
