@@ -21,10 +21,10 @@ const NavBar = () => {
     
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav ms-auto me-auto">
-                <a className="nav-link me-4" href="#men">MEN</a>
-                <a className="nav-link me-4" href="#women">WOMEN</a>
-                <a className="nav-link me-4" href="#brands">BRANDS</a>
-                <a className="nav-link me-4" href="#offers">OFFERS</a>
+                <a className="nav-link me-4" href="/men">MEN</a>
+                <a className="nav-link me-4" href="/women">WOMEN</a>
+                <a className="nav-link me-4" href="/brands">BRANDS</a>
+                <a className="nav-link me-4" href="/offers">OFFERS</a>
               </div>
               <div>
                 <form className="d-flex" role="search" id="form">
@@ -46,13 +46,13 @@ const NavBar = () => {
                   </div>
                   
                   <div id='icondiv'>
-                    <a href=""><i className="bi bi-person nav-icon me-4" aria-label="Profile"></i></a>
+                    <a href="/account"><i className="bi bi-person nav-icon me-4" aria-label="Profile"></i></a>
                   </div>
                   <div id='icondiv'>
-                    <a href=""><i className="bi bi-heart nav-icon me-4" aria-label="Favorites"></i></a>
+                    <a href="/favorites"><i className="bi bi-heart nav-icon me-4" aria-label="Favorites"></i></a>
                   </div>
                   <div id='icondiv'>
-                    <a  href=""><i className="bi bi-bag nav-icon" aria-label="Cart"></i></a>
+                    <a  href="/cart"><i className="bi bi-bag nav-icon" aria-label="Cart"></i></a>
                   </div>
                  
                 </form>
