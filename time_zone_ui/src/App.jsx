@@ -1,5 +1,6 @@
 import Login from './pages/Login'
 import Home from './pages/Home'
+import Men from './pages/Men'
 import Register from './pages/RegistrationForm'
 import Product from './components/Product'
 import NavBar from './components/NavBar'
@@ -12,6 +13,7 @@ function App() {
         <Route path="/signup" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/men" element={<Men />} />
         <Route path="/product" element={<Product/>}/>
         <Route path="/navbar" element={<Home/>}/>
       </Routes>
