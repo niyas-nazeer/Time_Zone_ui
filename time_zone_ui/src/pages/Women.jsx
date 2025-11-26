@@ -1,5 +1,5 @@
 import React from "react";
-import './Men.css';
+import './Women.css';
 import NavBar from '../components/NavBar'
 import Banner from '../components/Banner'
 import Sidebar from '../components/Sidebar'
@@ -7,17 +7,17 @@ import SortBox from "../components/SortBox";
 import ProductGrid from "../components/Product";
 import Footer from '../components/Footer';
 
-const Men = () => {
+const Women = () => {
     return(
         <>
             <NavBar/>
 
-            <Banner banner="/assets/banners/Men_banner.jpg"/>
+            <Banner banner="/assets/banners/Women_banner.jpg"/>
 
-            <div className="men-layout">
+            <div className="women-layout">
                 <Sidebar />
 
-                <div className="men-content">
+                <div className="women-content">
                     <SortBox />
                     <ProductGrid />
                 </div>
@@ -29,4 +29,4 @@ const Men = () => {
     )
 }
 
-export default Men
+export default Women

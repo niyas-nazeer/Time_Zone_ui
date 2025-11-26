@@ -87,7 +87,7 @@ const Login = () => {
       localStorage.setItem('refresh', result.refresh);
       localStorage.setItem('access', result.access);
       localStorage.setItem('userType', result.type);
-      navigate('/Home')
+      navigate('/home')
     } catch (err) {
       setError(err);
     } finally {
