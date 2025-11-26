@@ -1,0 +1,71 @@
+.sidebar-container {
+  width: 260px;
+  padding: 20px;
+  border-right: 1px solid #eee;
+  font-family: sans-serif;
+  margin-top: 5vh;
+  margin-left: 4vw;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  color: #d00;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  opacity: 0.7;
+}
+
+.dropdown-section {
+  margin-top: 5px;
+}
+
+.dropdown-header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown-header:hover {
+  opacity: 0.8;
+}
+.arrow {
+  font-size: 12px;
+}
+
+.dropdown-content {
+  padding: 8px 0 8px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}

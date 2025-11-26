@@ -1,0 +1,11 @@
+.men-layout {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.men-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 5vh;
+}
