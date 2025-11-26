@@ -1,7 +1,8 @@
+import Register from './pages/RegistrationForm'
 import Login from './pages/Login'
 import Home from './pages/Home'
 import Men from './pages/Men'
-import Register from './pages/RegistrationForm'
+import Women from './pages/Women'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/men" element={<Men />} />
+        <Route path="/women" element={<Women />} />
       </Routes>
   </Router>
   )
