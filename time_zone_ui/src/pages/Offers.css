@@ -1,0 +1,11 @@
+.Offers-layout {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.Offers-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 5vh;
+}
