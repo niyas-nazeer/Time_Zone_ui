@@ -81,7 +81,7 @@ const Home = () => {
 
 
       <div className="brand-container">
-        <BrandCard logo="/assets/brand-cards/amazefit.jpeg" link="/brands/amazefit" />
+        <BrandCard logo="/assets/brand-cards/amazefit.jpeg" link="/brands/amazfit" />
         <BrandCard logo="/assets/brand-cards/casio.jpg" link="/brands/casio" />
         <BrandCard logo="/assets/brand-cards/citizen.jpg" link="/brands/citizen" />
 

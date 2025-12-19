@@ -8,6 +8,7 @@ export default function ProductGrid() {
     fetch("http://localhost:8000/api/products/")
       .then((res) => res.json())
       .then((data) => setProducts(data));
+      window.scrollTo(0, 0);
   }, []);
 
   return (
